@@ -1,0 +1,56 @@
+html {
+  scroll-padding: var(--scroll-padding, 5rem);
+  scroll-behavior: smooth;
+}
+
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.box-title{
+  background: rgb(63,94,251);
+  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  border-radius: 64% 36% 77% 23% / 68% 69% 31% 32%;
+  transform-style: preserve-3d;
+}
+
+.main-title{
+  transform: translateZ(4rem);
+}
+
+.font-fraunces {
+  font-family: 'Fraunces', serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: rgb(63,94,251);
+  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  width: 0%;
+}
+
+@media (max-width: 768px) {
+  .blog-mobile {
+    margin-top: 7rem !important;
+  }
+  .blog-title {
+    font-size: 2.5rem !important;
+    line-height: 2.5rem !important;
+  }
+}
+
+
